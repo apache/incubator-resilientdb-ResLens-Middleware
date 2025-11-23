@@ -17,6 +17,13 @@
 # under the License.
 #
 
+**DEPRECATION NOTICE**
+
+This repository is deprecated.
+Active development now continues in the [ResilientDB Monorepo](https://github.com/apache/incubator-resilientdb).
+
+The ResilientDB ResLens Middleware service can be found at [ecosystem/monitoring/reslens-middleware](https://github.com/apache/incubator-resilientdb/tree/master/ecosystem/monitoring/reslens-middleware).
+
 # Monitoring Sidecar for ResLens
 
 This repository contains the **Monitoring Sidecar** for the ResLens project. The sidecar is designed to monitor the parent process running on the host using tools like **Pyroscope** and **Process Exporter**. It runs as a Docker container and collects profiling and process-level metrics for real-time performance monitoring.
