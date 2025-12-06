@@ -25,6 +25,7 @@ const nodeExporterRoutes = require("./routes/nodeExporter")
 const statsExporterRoutes = require("./routes/statsExporter")
 const transactionsRoutes = require("./routes/transactions")
 const explorerRoutes = require("./routes/explorer")
+const queryStatsRoutes = require("./routes/queryStats")
 const cors = require("cors")
 
 const app = express();
@@ -40,5 +41,6 @@ app.use("/api/v1/nodeExporter",nodeExporterRoutes)
 app.use("/api/v1/statsExporter",statsExporterRoutes)
 app.use("/api/v1/transactions",transactionsRoutes)
 app.use("/api/v1/explorer",explorerRoutes)
+app.use("/api/v1/queryStats",queryStatsRoutes)
 
 module.exports = app;
