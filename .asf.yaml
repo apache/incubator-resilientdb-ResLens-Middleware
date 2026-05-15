@@ -18,13 +18,13 @@ github:
   description: Global-Scale Sustainable Blockchain Fabric
   homepage: https://resilientdb.incubator.apache.org/
   labels:
-    - crypto 
-    - smart-contracts 
-    - blockchain 
-    - solidity 
-    - distributed-database 
-    - key-value-database 
-    - distributed-ledger 
+    - crypto
+    - smart-contracts
+    - blockchain
+    - solidity
+    - distributed-database
+    - key-value-database
+    - distributed-ledger
     - blockchain-platform
     - utxo
   enabled_merge_buttons:
@@ -35,8 +35,21 @@ github:
     main:
       required_status_checks:
         strict: true
-  
+
+  rulesets:
+    - name: "Default Branch Protection"
+      type: branch
+      branches:
+        includes:
+          - "~DEFAULT_BRANCH"
+          - "release/*"
+          - "rel/*"
+        excludes: []
+      bypass_teams:
+        - root
+      restrict_deletion: true
+      restrict_force_push: true
 notifications:
-  commits:      commits@resilientdb.apache.org
-  issues:       commits@resilientdb.apache.org
+  commits: commits@resilientdb.apache.org
+  issues: commits@resilientdb.apache.org
   pullrequests: commits@resilientdb.apache.org
